@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>JavaScript</title>
-<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body></body>
+<body>
+    <form name="userform">
+        <div><span class="f-title">名前</span><input type="text" name="username"></div>
+        <div><span class="f-title">メールアドレス</span><input type="text" name="email"></div>
+        <div><span class="f-title">年齢</span><input type="radio" name="age" id="age20s" value="20"><label for="age20s">20代</label><input type="radio" name="age" id="age30s" value="30"><label for="age30s">30代</label><input type="radio" name="age" id="age40s" value="40"><label for="age40s">40代</label><input type="radio" name="age" id="age50s" value="50"><label for="age50s">50代</label></div>
+        <div><span class="f-title">携帯</span><input type="checkbox" name="iphone" id="iphone" value="iphone"><label for="iphone">iPhone</label><input type="checkbox" name="android" id="android" value="android"><label for="android">Android</label><input type="checkbox" name="feature" id="feature" value="feature"><label for="feature">ガラケー</label><input type="checkbox" name="etc" id="etc" value="etc"><label for="etc">その他</label></div>
+    </form>
+    <button id="confirm">確認</button>
+</body>
 </html>
